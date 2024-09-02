@@ -8,13 +8,16 @@
     "build-colors": "ts-node -O '{\"module\": \"commonjs\"}' ./scripts/build-colors.ts",
     "build-constants": "ts-node -O '{\"module\": \"commonjs\"}' ./scripts/build-constants.ts",
     "start": "ng serve",
-    "prebuild": "yarn run build-constants && yarn run build-typography && yarn run build-colors",
+    "increase-patch": "npm version patch --prefix projects/lfx-component-lib",
+    "prebuild": "npm run increase-patch && npm run build-constants && npm run build-typography && npm run build-colors",
     "build": "ng build",
+    "postbuild": "npm run build --prefix projects/lfx-component-lib",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "storybook": "ng run lfx-component-lib:storybook",
     "build-storybook": "ng run lfx-component-lib:build-storybook",
-    "chromatic": "npx chromatic --project-token=chpt_92f26893ce6e479"
+    "chromatic": "npx chromatic --project-token=chpt_92f26893ce6e479",
+    "verdaccio": "npx verdaccio"
   },
   "dependencies": {
     "@angular/animations": "^18.0.0",
@@ -48,6 +51,7 @@
     "@storybook/test": "^8.2.6",
     "@types/jasmine": "~5.1.0",
     "chromatic": "^11.7.1",
+    "copyfiles": "^2.4.1",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",

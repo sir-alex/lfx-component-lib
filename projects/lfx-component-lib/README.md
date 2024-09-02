@@ -2,6 +2,9 @@
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
 
+## Installation with NG CLI
+`ng add lfx-component-lib`
+
 ## Code scaffolding
 
 Run `ng generate component component-name --project lfx-component-lib` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project lfx-component-lib`.

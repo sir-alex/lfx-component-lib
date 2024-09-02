@@ -1,6 +1,14 @@
 {
-  "name": "@emlimlf/lfx-component-lib",
-  "version": "0.0.10",
+  "name": "lfx-component-lib",
+  "version": "0.0.14",
+  "scripts": {
+    "build": "tsc -p tsconfig.schematics.json",
+    "postbuild": "copyfiles schematics/collection.json ../../dist/lfx-component-lib/"
+  },
+  "ng-add": {
+    "save": "true"
+  },
+  "schematics": "./schematics/collection.json",
   "peerDependencies": {
     "@angular/common": "^18.1.0",
     "@angular/core": "^18.1.0"
@@ -8,13 +16,12 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
+  "devDependencies": {
+    "copyfiles": "^2.4.1"
+  },
   "sideEffects": false,
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@emlimlf"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/emlimlf/lfx-component-lib.git"
+    "registry": "http://localhost:4873"
   },
   "exports": {
     "./color-palette.json": {
