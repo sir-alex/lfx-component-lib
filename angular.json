@@ -11,6 +11,9 @@
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
+        },
+        "lfx-ng-schematics:lfx-component": {
+          "path": "projects/lfx-component-lib/src/lib/components"
         }
       },
       "architect": {
