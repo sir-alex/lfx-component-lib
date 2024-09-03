@@ -18,7 +18,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    type: 'error' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5210&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n  play: async ( {canvasElement} ) => {\n    const element = getElement(canvasElement);\n    await expect(element.classList).toContain('error');\n  }\n}"
+                "defaultValue": "{\n  args: {\n    // @ts-ignore\n    type: 'error' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5210&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n  play: async ( {canvasElement} ) => {\n    const element = getElement(canvasElement);\n    await expect(element.classList).toContain('error');\n  }\n}"
             },
             {
                 "name": "meta",
@@ -38,7 +38,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<ToastComponent>",
-                "defaultValue": "{\n  title: 'LFX Components/Containers/Toast',\n  component: ToastComponent,\n  tags: ['autodocs'],\n  render: (args) => ({\n    template: `\n      <lfx-toast type=\"${args.type}\">\n        <h1>Title</h1>\n        <p>Body paragraph</p>\n      </lfx-toast>\n    `,\n  }),\n  argTypes: {\n    type: {\n      control: 'select',\n      options: ['notice', 'warning', 'success', 'error'] as IType[],\n    },\n  },\n  args: {\n    type: 'notice' as IType,\n  },\n}"
+                "defaultValue": "{\n  title: 'LFX Components/Containers/Toast',\n  component: ToastComponent,\n  tags: ['autodocs'],\n  render: (args) => ({\n    template: `\n      <lfx-toast type=\"${args.type}\">\n        <h1>Title</h1>\n        <p>Body paragraph</p>\n      </lfx-toast>\n    `,\n  }),\n  argTypes: {\n    type: {\n      control: 'select',\n      options: ['notice', 'warning', 'success', 'error'] as IType[],\n    },\n  },\n  args: {\n    // @ts-ignore\n    type: 'notice' as IType,\n  },\n}"
             },
             {
                 "name": "Notice",
@@ -48,7 +48,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    type: 'notice' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5198&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n  play: async ( {canvasElement} ) => {\n    const element = getElement(canvasElement);\n    await expect(element.classList).toContain('notice');\n  }\n}"
+                "defaultValue": "{\n  args: {\n    // @ts-ignore\n    type: 'notice' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5198&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n  play: async ( {canvasElement} ) => {\n    const element = getElement(canvasElement);\n    await expect(element.classList).toContain('notice');\n  }\n}"
             },
             {
                 "name": "preview",
@@ -78,7 +78,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    type: 'success' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5207&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n  play: async ( {canvasElement} ) => {\n    const element = getElement(canvasElement);\n    await expect(element.classList).toContain('success');\n  }\n}"
+                "defaultValue": "{\n  args: {\n    // @ts-ignore\n    type: 'success' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5207&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n  play: async ( {canvasElement} ) => {\n    const element = getElement(canvasElement);\n    await expect(element.classList).toContain('success');\n  }\n}"
             },
             {
                 "name": "Warning",
@@ -88,7 +88,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    type: 'warning' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5205&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n  play: async ( {canvasElement} ) => {\n    const element = getElement(canvasElement);\n    await expect(element.classList).toContain('warning');\n  }\n}"
+                "defaultValue": "{\n  args: {\n    // @ts-ignore\n    type: 'warning' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5205&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n  play: async ( {canvasElement} ) => {\n    const element = getElement(canvasElement);\n    await expect(element.classList).toContain('warning');\n  }\n}"
             }
         ],
         "functions": [
@@ -157,7 +157,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    type: 'error' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5210&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n  play: async ( {canvasElement} ) => {\n    const element = getElement(canvasElement);\n    await expect(element.classList).toContain('error');\n  }\n}"
+                    "defaultValue": "{\n  args: {\n    // @ts-ignore\n    type: 'error' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5210&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n  play: async ( {canvasElement} ) => {\n    const element = getElement(canvasElement);\n    await expect(element.classList).toContain('error');\n  }\n}"
                 },
                 {
                     "name": "meta",
@@ -167,7 +167,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<ToastComponent>",
-                    "defaultValue": "{\n  title: 'LFX Components/Containers/Toast',\n  component: ToastComponent,\n  tags: ['autodocs'],\n  render: (args) => ({\n    template: `\n      <lfx-toast type=\"${args.type}\">\n        <h1>Title</h1>\n        <p>Body paragraph</p>\n      </lfx-toast>\n    `,\n  }),\n  argTypes: {\n    type: {\n      control: 'select',\n      options: ['notice', 'warning', 'success', 'error'] as IType[],\n    },\n  },\n  args: {\n    type: 'notice' as IType,\n  },\n}"
+                    "defaultValue": "{\n  title: 'LFX Components/Containers/Toast',\n  component: ToastComponent,\n  tags: ['autodocs'],\n  render: (args) => ({\n    template: `\n      <lfx-toast type=\"${args.type}\">\n        <h1>Title</h1>\n        <p>Body paragraph</p>\n      </lfx-toast>\n    `,\n  }),\n  argTypes: {\n    type: {\n      control: 'select',\n      options: ['notice', 'warning', 'success', 'error'] as IType[],\n    },\n  },\n  args: {\n    // @ts-ignore\n    type: 'notice' as IType,\n  },\n}"
                 },
                 {
                     "name": "Notice",
@@ -177,7 +177,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    type: 'notice' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5198&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n  play: async ( {canvasElement} ) => {\n    const element = getElement(canvasElement);\n    await expect(element.classList).toContain('notice');\n  }\n}"
+                    "defaultValue": "{\n  args: {\n    // @ts-ignore\n    type: 'notice' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5198&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n  play: async ( {canvasElement} ) => {\n    const element = getElement(canvasElement);\n    await expect(element.classList).toContain('notice');\n  }\n}"
                 },
                 {
                     "name": "Success",
@@ -187,7 +187,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    type: 'success' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5207&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n  play: async ( {canvasElement} ) => {\n    const element = getElement(canvasElement);\n    await expect(element.classList).toContain('success');\n  }\n}"
+                    "defaultValue": "{\n  args: {\n    // @ts-ignore\n    type: 'success' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5207&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n  play: async ( {canvasElement} ) => {\n    const element = getElement(canvasElement);\n    await expect(element.classList).toContain('success');\n  }\n}"
                 },
                 {
                     "name": "Warning",
@@ -197,7 +197,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    type: 'warning' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5205&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n  play: async ( {canvasElement} ) => {\n    const element = getElement(canvasElement);\n    await expect(element.classList).toContain('warning');\n  }\n}"
+                    "defaultValue": "{\n  args: {\n    // @ts-ignore\n    type: 'warning' as IType,\n  },\n  parameters: {\n    design: {\n      type: \"figspec\",\n      url: \"https://www.figma.com/design/nj8rOxBtzQCa7KrvBxF4aF/Coherence-Design-System?node-id=772-5205&t=zfHib1d5XSXabYJp-4\",\n    },\n  },\n  play: async ( {canvasElement} ) => {\n    const element = getElement(canvasElement);\n    await expect(element.classList).toContain('warning');\n  }\n}"
                 }
             ],
             "projects/lfx-component-lib/src/lib/containers/sections/__docs__/sections.stories.ts": [
